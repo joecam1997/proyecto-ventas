@@ -1,0 +1,33 @@
+{% extends 'formulario.html' %}
+{% load static %}
+
+{% block controls %}
+    <div class="col-md-4">
+        <label for="inputEmail4" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-2">
+        <label for="inputPassword4" class="form-label">Cedula</label>
+        <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-5">
+        <label for="inputAddress" class="form-label">Direccion</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder=>
+    </div>
+    <div class="col-2">
+        <label for="inputAddress2" class="form-label">Celular/Telefono</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder=>
+    </div>
+
+    <div class="col-md-1">
+        <label for="inputState" class="form-label">Parentesco</label>
+        <select id="inputState" class="form-select">
+            <option selected>Madre</option>
+            <option>Padre</option>
+            <option>Hijo</option>
+            <option>Otros</option>
+        </select>
+    </div>
+
+
+{% endblock %}

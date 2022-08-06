@@ -1,0 +1,40 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 15%;">id_empleado</th>
+        <th scope="col" style="width: 15%;">Discapacidad</th>
+        <th scope="col" style="width: 15%;">Toma de medicamentos</th>
+        <th scope="col" style="width: 15%;">Tipo de sangre</th>
+        <th scope="col" style="width: 15%;">Vacunacion</th>
+
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>001</td>
+      <td>No</td>
+      <td>Si</td>
+      <td>O+</td>
+      <td>Si</td>
+
+      <td class="acciones">
+        <a href="{% url 'formfichamedica' %}">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+    <tr>
+      <td>002</td>
+      <td>Si</td>
+      <td>Si</td>
+      <td>A+</td>
+      <td>Si</td>
+
+      <td class="acciones">
+        <a href="{% url 'formfichamedica' %}">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'formulario.html' %}
+{% load static %}
+
+{% block controls %}
+    <div class="col-md-1">
+        <label for="inputEmail4" class="form-label">id_sueldo</label>
+        <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-2">
+        <label for="inputPassword4" class="form-label">Fecha</label>
+        <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-2">
+        <label for="inputAddress" class="form-label">codigo_Empleo</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="">
+    </div>
+
+    <div class="col-md-1">
+        <label for="inputState" class="form-label">Estado</label>
+        <select id="inputState" class="form-select">
+            <option selected>Activo</option>
+            <option>Pasivo</option>
+            <option>Inactivo</option>
+        </select>
+    </div>
+
+
+{% endblock %}

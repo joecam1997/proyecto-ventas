@@ -1,0 +1,37 @@
+{% extends 'consultaficha.html' %}
+{% block titulo %}
+   Cargos
+{% endblock %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+
+        <th scope="col" style="width: 40%;">id_Cargo</th>
+        <th scope="col" style="width: 40%;">Descripcion</th>
+
+
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+
+      <td>001 Gerente de Ventas</td>
+      <td>ventas</td>
+
+      <td class="acciones">
+        <a href="{% url 'formCargo' %}">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+    <tr>
+
+      <td>002  Administrador de inventarios </td>
+        <td>inventarios,bodega e insumos</td>
+      <td class="acciones">
+        <a href="{% url 'formCargo' %}">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+{% endblock %}

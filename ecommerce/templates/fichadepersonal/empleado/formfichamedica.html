@@ -1,0 +1,29 @@
+{% extends 'formulario.html' %}
+{% load static %}
+
+{% block controls %}
+    <div class="col-md-4">
+        <label for="inputEmail4" class="form-label">Discapacidad</label>
+        <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-2">
+        <label for="inputPassword4" class="form-label">Toma de medicamentos</label>
+        <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    </div>
+    <div class="col-md-2">
+        <label for="inputState" class="form-label">Tipo de sangre</label>
+        <select id="inputState" class="form-select">
+            <option selected>O+</option>
+            <option>O-</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+    </div>
+
+
+{% endblock %}

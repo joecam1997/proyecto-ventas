@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+      <div class="container-fluid">
+       <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
+          <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/ficha.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+              <div class="card-body text-center">
+               <a class="text-decoration-none" href="{% url 'empleado' %}">
+                 <h5 class="card-title text-success">Ficha de personal</h5>
+               </a>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/admin.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                 <a class="text-decoration-none" href="{% url 'departamento' %}">
+                   <h5 class="card-title text-success">Departamentos</h5>
+                 </a>
+                <p class="card-text"></p>
+               </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/cargos.png.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                  <a class="text-decoration-none" href="{% url 'Cargo' %}">
+                     <h5 class="card-title text-success">Cargos</h5>
+                  </a>
+                <p class="card-text"></p>
+               </div>
+            </div>
+          </div>
+
+           <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/pago.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+             <div class="card-body text-center">
+              <a class="text-decoration-none" href="{% url 'sueldo' %}">
+                <h5 class="card-title text-success">Sueldos</h5>
+              </a>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+            <div class="col">
+            <div class="card"  style="height:15rem">
+              <img src="{% static 'img/cards/capacitacion.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+               <a class="text-decoration-none" href="{% url 'capacitacion' %}">
+                 <h5 class="card-title text-success">Capacitaciones</h5>
+               </a>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card"  style="height:15rem" >
+              <img src="{% static 'img/cards/emergencia.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'contactoemergencia' %}">
+                  <h5 class="card-title text-success">Contacto de Emergencia</h5>
+                </a>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/academico.png' %}" class="img-fluid  mx-auto d-block" style="width:35%" >
+             <div class="card-body text-center">
+             <a class="text-decoration-none" href="{% url 'Academico' %}">
+                <h5 class="card-title text-success">Informacion Academica</h5>
+             </a>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+            <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/fichamedica.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                   <a class="text-decoration-none" href="{% url 'fichamedica' %}">
+                     <h5 class="card-title text-success">Ficha Medica</h5>
+                   </a>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+
+
+       </div>
+      </div>
+{% endblock %}

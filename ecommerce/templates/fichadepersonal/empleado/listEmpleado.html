@@ -1,0 +1,41 @@
+{% extends 'consultaficha.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: %;">Nro</th>
+        <th scope="col" style="width: %;">Nombre</th>
+        <th scope="col" style="width: 10%;">Cedula</th>
+        <th scope="col" style="width: 30%;">Direccion</th>
+        <th scope="col" style="width: 10%;">Telefono</th>
+        <th scope="col" style="width: 15%;">Correo</th>
+        <th scope="col" style="width: 10%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>Danny Veracruz</td>
+      <td>0914123458</td>
+      <td>Milagro</td>
+      <td>002268678</td>
+      <td>daveracruz@gmail.com</td>
+      <td class="acciones">
+        <a href="{% url 'formEmpleado' %}"> ✏️</a>
+        <a href="{% url 'eliminarEmpleado' %}">❌</a>
+      </td>
+  </tr>
+    <tr>
+      <td>2</td>
+      <td>Luis Vanegas</td>
+      <td>0914123458</td>
+      <td>Milagro</td>
+      <td>002268678</td>
+      <td>davanegas@gmail.com</td>
+      <td class="acciones">
+        <a href="{% url 'formEmpleado' %}">✏️</a>
+        <a href="{% url 'eliminarEmpleado' %}">❌</a>
+      </td>
+  </tr>
+{% endblock %}

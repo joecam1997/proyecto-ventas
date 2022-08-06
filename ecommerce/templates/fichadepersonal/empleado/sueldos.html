@@ -1,0 +1,34 @@
+{% extends 'consultaficha.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 20%;">id_sueldo</th>
+        <th scope="col" style="width:20%;">Fecha</th>
+        <th scope="col" style="width: 20%;">id_empleado</th>
+        <th scope="col" style="width: 20%;">Estado</th>
+
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1.000</td>
+      <td>2019/07/30</td>
+      <td>001</td>
+      <td>Activo</td>
+      <td class="acciones">
+        <a href="{% url 'formsueldo' %}">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+    <tr>
+      <td>800</td>
+      <td>2022/03/14</td>
+      <td>002</td>
+      <td>Activo</td>
+      <td class="acciones">
+        <a href="{% url 'formsueldo' %}">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+{% endblock %}
